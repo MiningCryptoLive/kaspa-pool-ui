@@ -22,15 +22,15 @@ const propTypes = {
   }).isRequired,
 };
 
-function ErgoPool({ ergoPool }) {
-  return <PoolStats props={ergoPool} />;
+function ErgoPool({ etcsoloPool }) {
+  return <PoolStats props={etcsoloPool} />;
 }
 
 export async function getServerSideProps() {
   try {
-    const ergoPool = await getPoolStats("ergo02");
+    const ergoPool = await getPoolStats("etcsolo");
     return {
-      props: { ergoPool },
+      props: { etcsoloPool },
     };
   } catch (error) {
     console.log(error);// eslint-disable-line
@@ -39,4 +39,4 @@ export async function getServerSideProps() {
 }
 
 ErgoPool.propTypes = propTypes;
-export default ErgoPool;
+export default etcsoloPool;
