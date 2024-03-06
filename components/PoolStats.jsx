@@ -1,6 +1,6 @@
-function PoolStats(ergoPool) {
-  console.log(ergoPool);
-  return <p>PooStats</p>;
+function PoolStats(etcsoloPool) {
+  console.log(etcsoloPool);
+  return <p>PoolStats</p>;
 }
 
 export default PoolStats;
